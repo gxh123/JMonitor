@@ -12,14 +12,14 @@
 
 Quick Started
 ---------------------
-运行JMonitor-server
-1、进入JMonitor-master\jmonitor-core文件夹，执行：mvn install
-2、连接mysql数据库，执行JMonitor-master下的jmonitor.sql文件
-3、修改JMonitor-master\jmonitor-core\src\main\resources下的c3p0.properties，主要修改c3p0.user、c3p0.password这两个属性
-4、用IDEA打开jmonitor-core，jmonitor-web这两个项目，运行jmonitor-core\src\main\java\com\jmonitor\core\server下的JMonitorServer.java
-5、再运行jmonitor-core\src\test\java下的JMonitorTest.java进行测试
+运行JMonitor-server  
+1、进入JMonitor-master\jmonitor-core文件夹，执行：mvn install  
+2、连接mysql数据库，执行JMonitor-master下的jmonitor.sql文件  
+3、修改JMonitor-master\jmonitor-core\src\main\resources下的c3p0.properties，主要修改c3p0.user、c3p0.password这两个属性  
+4、用IDEA打开jmonitor-core，jmonitor-web这两个项目，运行jmonitor-core\src\main\java\com\jmonitor\core\server下的JMonitorServer.java  
+5、再运行jmonitor-core\src\test\java下的JMonitorTest.java进行测试  
 
-运行web
-1、进入JMonitor-master\jmonitor-web文件夹，执行：mvn install
-2、修改JMonitor-master\jmonitor-web\src\main\resources下的jfinal_config.txt，主要修改user、password这两个属性
-3、用IDEA打开jmonitor-web这个项目，通过tomcat运行项目
+运行web  
+1、进入JMonitor-master\jmonitor-web文件夹，执行：mvn install  
+2、修改JMonitor-master\jmonitor-web\src\main\resources下的jfinal_config.txt，主要修改user、password这两个属性  
+3、用IDEA打开jmonitor-web这个项目，通过tomcat运行项目  
