@@ -1,0 +1,31 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="jmonitor-web:war exploded">
+    <output-path>$PROJECT_DIR$/target/jmonitor-web</output-path>
+    <root id="root">
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="jmonitor-web" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="Maven: org.slf4j:slf4j-api:1.7.22" />
+          <element id="library" level="project" name="Maven: ch.qos.logback:logback-classic:1.1.8" />
+          <element id="library" level="project" name="Maven: ch.qos.logback:logback-core:1.1.8" />
+          <element id="library" level="project" name="Maven: com.jfinal:jfinal:2.2" />
+          <element id="library" level="project" name="Maven: cglib:cglib-nodep:3.1" />
+          <element id="library" level="project" name="Maven: net.sf.ehcache:ehcache-core:2.6.11" />
+          <element id="library" level="project" name="Maven: javax.servlet:jstl:1.2" />
+          <element id="library" level="project" name="Maven: taglibs:standard:1.1.2" />
+          <element id="library" level="project" name="Maven: mysql:mysql-connector-java:5.1.38" />
+          <element id="library" level="project" name="Maven: javax.servlet:javax.servlet-api:3.1.0" />
+          <element id="library" level="project" name="Maven: com.mchange:c3p0:0.9.5.2" />
+          <element id="library" level="project" name="Maven: com.mchange:mchange-commons-java:0.2.11" />
+          <element id="library" level="project" name="jmonitor-core" />
+        </element>
+      </element>
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/target/jmonitor-web/META-INF/MANIFEST.MF" />
+      </element>
+      <element id="javaee-facet-resources" facet="jmonitor-web/web/Web" />
+    </root>
+  </artifact>
+</component>

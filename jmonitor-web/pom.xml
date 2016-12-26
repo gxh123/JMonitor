@@ -1,0 +1,90 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.jmonitor-web</groupId>
+  <artifactId>jmonitor-web</artifactId>
+  <packaging>war</packaging>
+  <version>1.0</version>
+  <name>jmonitor Maven Webapp</name>
+  <url>http://maven.apache.org</url>
+
+  <dependencies>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>3.8.1</version>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.slf4j</groupId>
+      <artifactId>slf4j-api</artifactId>
+      <version>1.7.22</version>
+    </dependency>
+    <dependency>
+      <groupId>ch.qos.logback</groupId>
+      <artifactId>logback-classic</artifactId>
+      <version>1.1.8</version>
+    </dependency>
+    <dependency>
+      <groupId>ch.qos.logback</groupId>
+      <artifactId>logback-core</artifactId>
+      <version>1.1.8</version>
+    </dependency>
+    <dependency>
+      <groupId>com.jfinal</groupId>
+      <artifactId>jfinal</artifactId>
+      <version>2.2</version>
+    </dependency>
+    <dependency>
+      <groupId>net.sf.ehcache</groupId>
+      <artifactId>ehcache-core</artifactId>
+      <version>2.6.11</version>
+    </dependency>
+    <dependency>
+      <groupId>javax.servlet</groupId>
+      <artifactId>jstl</artifactId>
+      <version>1.2</version>
+    </dependency>
+    <dependency>
+      <groupId>taglibs</groupId>
+      <artifactId>standard</artifactId>
+      <version>1.1.2</version>
+    </dependency>
+    <dependency>
+      <groupId>mysql</groupId>
+      <artifactId>mysql-connector-java</artifactId>
+      <version>5.1.38</version>
+    </dependency>
+    <dependency>
+      <groupId>javax.servlet</groupId>
+      <artifactId>javax.servlet-api</artifactId>
+      <version>3.1.0</version>
+    </dependency>
+    <dependency>
+      <groupId>com.mchange</groupId>
+      <artifactId>c3p0</artifactId>
+      <version>0.9.5.2</version>
+    </dependency>
+  </dependencies>
+
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+  </properties>
+
+  <build>
+    <finalName>jmonitor-web</finalName>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>3.1</version>
+        <configuration>
+          <source>1.7</source>
+          <target>1.7</target>
+          <encoding>UTF-8</encoding>  <!-- “编码 GBK 的不可映射字符”问题的解决 -->
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+</project>

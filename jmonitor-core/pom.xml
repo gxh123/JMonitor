@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.jmonitor-core</groupId>
+    <artifactId>jmonitor-core</artifactId>
+    <version>1.0</version>
+
+    <repositories>
+        <repository>
+            <!-- Maven 自带的中央仓库使用的Id为central 如果其他的仓库声明也是用该Id 就会覆盖中央仓库的配置 -->
+            <id>mvnrepository</id>
+            <name>mvnrepository</name>
+            <url>https://maven.repository.redhat.com/ga/</url>
+            <layout>default</layout>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+        </repository>
+    </repositories>
+
+    <dependencies>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>3.8.1</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
+            <version>1.7.22</version>
+        </dependency>
+        <dependency>
+            <groupId>ch.qos.logback</groupId>
+            <artifactId>logback-classic</artifactId>
+            <version>1.1.8</version>
+        </dependency>
+        <dependency>
+            <groupId>ch.qos.logback</groupId>
+            <artifactId>logback-core</artifactId>
+            <version>1.1.8</version>
+        </dependency>
+        <dependency>
+            <groupId>com.mchange</groupId>
+            <artifactId>c3p0</artifactId>
+            <version>0.9.5.2</version>
+        </dependency>
+        <dependency>
+            <groupId>commons-dbutils</groupId>
+            <artifactId>commons-dbutils</artifactId>
+            <version>1.6</version>
+        </dependency>
+        <dependency>
+            <groupId>com.google.code.gson</groupId>
+            <artifactId>gson</artifactId>
+            <version>2.8.0</version>
+        </dependency>
+        <dependency>
+            <groupId>io.netty</groupId>
+            <artifactId>netty-all</artifactId>
+            <version>4.1.5.Final</version>
+        </dependency>
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <version>5.1.38</version>
+        </dependency>
+        <dependency>
+            <groupId>org.hyperic</groupId>
+            <artifactId>sigar</artifactId>
+            <version>1.6.5.132-6</version>
+        </dependency>
+    </dependencies>
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+    </properties>
+
+    <build>
+        <finalName>jmonitor-core</finalName>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.1</version>
+                <configuration>
+                    <source>1.7</source>
+                    <target>1.7</target>
+                    <encoding>UTF-8</encoding>  <!-- “编码 GBK 的不可映射字符”问题的解决 -->
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+</project>
