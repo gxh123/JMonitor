@@ -65,6 +65,14 @@
       <artifactId>c3p0</artifactId>
       <version>0.9.5.2</version>
     </dependency>
+	  </dependency>
+	  <dependency>
+      <groupId>com.jmonitor-core</groupId>
+      <artifactId>jmonitor-core</artifactId>
+      <version>1.0</version>
+      <scope>system</scope>
+      <systemPath>${project.basedir}/lib/jmonitor-core.jar</systemPath>
+    </dependency>
   </dependencies>
 
   <properties>
