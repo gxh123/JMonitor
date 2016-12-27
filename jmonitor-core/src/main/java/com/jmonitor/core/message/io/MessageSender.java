@@ -69,10 +69,10 @@ public class MessageSender implements Runnable{
 			future.awaitUninterruptibly(100, TimeUnit.MILLISECONDS); // 100 ms
 
 			if (!future.isSuccess()) {
-				logger.info("Error when try connecting to " + address);
+				logger.error("Error when try connecting to " + address);
 				closeChannel(future);
 			} else {
-				logger.error("Connected to server at " + address);
+				logger.info("Connected to server at " + address);
 				return future;
 			}
 		} catch (Throwable e) {

@@ -19,7 +19,7 @@ public class Error extends Message {
     }
 
     public static void logError(MessageProducer producer, Throwable cause) {
-        Error error = new Error("Error", cause.getClass().getName(), producer);
+        Error error = new Error("Problem", cause.getClass().getName(), producer);
         StringWriter writer = new StringWriter(2048);
         cause.printStackTrace(new PrintWriter(writer));
         String detailMessage = writer.toString();
