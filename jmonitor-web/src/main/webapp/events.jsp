@@ -46,7 +46,7 @@
             <nav class="navbar navbar-static-top" role="navigation" style="margin-bottom: 10px">
                 <ul class="nav navbar-top-links navbar-right">
                     <li>
-                        <a href="login.html" style="font-family: inherit;">
+                        <a href="https://github.com/gxh123/JMonitor" style="font-family: inherit;">
                             ☆ star me
                         </a>
                     </li>
