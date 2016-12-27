@@ -3,10 +3,10 @@ JMonitor简介
 ##### JMonitor是一个监控系统，用于Java应用程序的监控。它收集应用程序的信息，处理成报告，将报告存入mysql数据库，并可以在浏览器端展示。
 
 ##### JMonitor系统结构
-JMonitor分为两部分：JMonitor-core和JMonitor-web。
-JMonitor-core为系统的核心部分，主要功能有：提供可供调用的系统API来产生消息，收集与处理消息，将处理结果存入数据库。
-JMonitor-web为系统的展示部分，通过JFinal搭建而成，主要功能是将数据库中的处理结果在浏览器端展示，也可以展示JMonitor系统实时的处理结果。
-应用程序使用JMonitor时，需要引入JMonitor-core.jar包，具体API使用参考jmonitor-core\src\test\java下的JMonitorTest.java
+JMonitor分为两部分：JMonitor-core和JMonitor-web。  
+JMonitor-core为系统的核心部分，主要功能有：提供可供调用的系统API来产生消息，收集与处理消息，将处理结果存入数据库。  
+JMonitor-web为系统的展示部分，通过JFinal搭建而成，主要功能是将数据库中的处理结果在浏览器端展示，也可以展示JMonitor系统实时的处理结果。  
+应用程序使用JMonitor时，需要引入JMonitor-core.jar包，具体API使用参考jmonitor-core\src\test\java下的JMonitorTest.java。  
 
 ##### JMonitor支持的监控消息类型包括：
 +  **Transaction**	主要用来记录某段代码的执行时间和次数。
