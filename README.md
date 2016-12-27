@@ -10,6 +10,7 @@ JMonitor-web运行界面：
 ![image](https://github.com/gxh123/picture/blob/master/jmonitor/events.JPG)  
 ![image](https://github.com/gxh123/picture/blob/master/jmonitor/transactions.JPG)  
 ![image](https://github.com/gxh123/picture/blob/master/jmonitor/status1.JPG)  
+![image](https://github.com/gxh123/picture/blob/master/jmonitor/status2.PNG)  
 ![image](https://github.com/gxh123/picture/blob/master/jmonitor/problems.JPG)  
 应用程序使用JMonitor时，需要引入JMonitor-core.jar包，具体API使用参考jmonitor-core\src\test\java下的JMonitorTest.java。  
 
