@@ -1,7 +1,12 @@
-##### JMonitor是一个监控系统，用于Java应用程序的监控。
+JMonitor简介
+---------------------
+##### JMonitor是一个监控系统，用于Java应用程序的监控。它收集应用程序的信息，处理成报告，将报告存入mysql数据库，并可以在浏览器端展示。
 
 ##### JMonitor系统结构
-这里有一段简单介绍
+JMonitor分为两部分：JMonitor-core和JMonitor-web。
+JMonitor-core为系统的核心部分，主要功能有：提供可供调用的系统API来产生消息，收集与处理消息，将处理结果存入数据库。
+JMonitor-web为系统的展示部分，通过JFinal搭建而成，主要功能是将数据库中的处理结果在浏览器端展示，也可以展示JMonitor系统实时的处理结果。
+应用程序使用JMonitor时，需要引入JMonitor-core.jar包，具体API使用参考jmonitor-core\src\test\java下的JMonitorTest.java
 
 ##### JMonitor支持的监控消息类型包括：
 +  **Transaction**	主要用来记录某段代码的执行时间和次数。
@@ -12,14 +17,14 @@
 
 Quick Started
 ---------------------
-运行JMonitor-server  
+##### 运行JMonitor-server  
 1、进入JMonitor-master\jmonitor-core文件夹，执行：mvn install  
 2、连接mysql数据库，执行JMonitor-master下的jmonitor.sql文件  
 3、修改JMonitor-master\jmonitor-core\src\main\resources下的c3p0.properties，主要修改c3p0.user、c3p0.password这两个属性  
 4、用IDEA打开jmonitor-core这个项目，运行jmonitor-core\src\main\java\com\jmonitor\core\server下的JMonitorServer.java  
 5、再运行jmonitor-core\src\test\java下的JMonitorTest.java进行测试  
 
-运行web  
+##### 运行web  
 1、进入JMonitor-master\jmonitor-web文件夹，执行：mvn install  
 2、修改JMonitor-master\jmonitor-web\src\main\resources下的jfinal_config.txt，主要修改user、password这两个属性  
 3、用IDEA打开jmonitor-web这个项目，通过tomcat运行项目  
