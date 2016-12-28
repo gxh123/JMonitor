@@ -1,6 +1,6 @@
 JMonitor简介
 ---------------------
-##### JMonitor是一个监控系统，用于Java应用程序的监控。它收集应用程序的信息，处理成报告，将报告存入mysql数据库，并可以在浏览器端展示。
+##### JMonitor是一个监控系统，用于多节点的Java应用程序的监控。它收集各个机器上的应用程序的信息，处理成报告，将报告存入mysql数据库，并可以在浏览器端展示。
 
 ##### JMonitor系统结构
 JMonitor分为两部分：JMonitor-core和JMonitor-web。  
